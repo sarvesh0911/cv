@@ -1,0 +1,167 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+}
+
+
+body {
+    overflow-x: hidden;
+}
+
+.hero-header {
+    width: 100%;
+    min-height: 100vh;
+    background: #222;
+}
+
+.wrapper {
+    max-width: 95%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    padding: 40px 0 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo i {
+    height: 45px;
+    width: 45px;
+    background-color: #007ced;
+    border-radius: 50% 0 50% 0;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 10px;
+    margin-right: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.logo .logo-text {
+    font-size: 24px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 4rem;
+}
+
+.container .hero-pic {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 15px solid rgb(60, 80, 100);
+    box-shadow: 5px 7px 25px rgba(0, 0, 0, 0.5);
+}
+
+.hero-pic img {
+    height: 100%;
+    width: 100%;
+    transition: 0.5s;
+}
+
+.hero-pic img:hover {
+    transform: scale(1.2);
+}
+
+.hero-text {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.hero-text h5 {
+    color: #007ced;
+    font-size: 16px;
+}
+
+.hero-text h5 span {
+    color: #007ced;
+    font-size: 18px;
+}
+
+.hero-text h1 {
+    color: #fff;
+    font-size: 3rem;
+}
+
+.hero-text p {
+    color: #fff;
+}
+
+
+.btn-group {
+    margin: 45px 0;
+}
+
+.btn-group .btn {
+    
+   
+    border-color: #d5d5d5;
+    color: #fff;
+    background-color: #333;
+    padding: 12px 25px;
+    margin: 5px 0px;
+    margin-right: 7px;
+    border-radius: 30px;
+    border: 2px solid #e5e5e5;
+    box-shadow: 0 10px 10px -8px rgb(0 0 0 / 78%);
+   
+}
+
+.btn-group .btn i {
+    margin-right: 8px; /* Adds space between icon and text */
+}
+
+.btn.active {
+    border-color: #007ced;
+}
+
+.btn-group .btn:hover {
+    background-color: #007ced;
+    border-color: #007ced;
+}
+
+.social a {
+    color: #fff;
+    margin-right: 15px;
+    font-size: 1.5rem;
+}
+
+.social a:hover {
+    color: #007ced;
+}
+
+/* responsive desgin */
+
+@media(max-width:768px){
+    .container{
+        flex-direction: column;
+        padding-top: 2rem;
+
+    }
+    .hero-text{
+        padding: 50px 0px;
+    }
+}
